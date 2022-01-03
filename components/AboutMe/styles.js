@@ -7,7 +7,7 @@ export const Container = styled.div`
 
     grid-template-areas: "IMG TXT";
     
-    padding: 20px 0;
+    padding: 40px 0;
 
 
     background-color: var(--bgAlt);

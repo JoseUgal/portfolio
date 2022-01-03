@@ -46,6 +46,8 @@ export const Option = styled.a`
         margin-left: 1rem;
     }
 
+    cursor: pointer;
+
     font-size: 0.8rem;
 
     @media ${bp.tablet} {

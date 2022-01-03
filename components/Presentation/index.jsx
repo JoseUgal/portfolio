@@ -15,10 +15,15 @@ import {
     Whatsapp
 } from "@styled-icons/boxicons-logos"
 
+// ** Hooks
+import useWindowSize from "../../hooks/useWindowSize";
+
 export default function Presentation ({
     name,
     job
 }) {
+    const { width } = useWindowSize()
+
     return (
         <Container>
             <div>
@@ -30,13 +35,14 @@ export default function Presentation ({
                     Whatsapp
                 </ContactButton>
             </div>
-            <ImageContainer>
-                <img
+            <div>
+                <Image
                     alt="Presentation-Image"
                     src={"/illustration.svg"}
-                    height={"100%"}
+                    width={(width < 1024) ? 600 : 800}
+                    height={(width < 1024) ? 600 : 800}
                 />
-            </ImageContainer>
+            </div>
         </Container>
     )
 }

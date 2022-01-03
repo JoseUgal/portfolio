@@ -11,7 +11,9 @@ import {
 
 export default function Navbar () {
 
-    const {changeTheme} = useTheme()
+    const {theme, changeTheme} = useTheme()
+
+    console.log(theme)
 
     return (
         <Container id="navbar">
@@ -25,7 +27,10 @@ export default function Navbar () {
                 <Option href="#skills">Skills</Option>
 
                 <Option onClick={changeTheme}>
-                    ☀️ 
+                    { theme === 'light'
+                        ? '🌙'
+                        : '☀️'
+                    } 
                 </Option>
             </div>
         </Container>

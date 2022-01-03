@@ -5,28 +5,25 @@ import bp from "../../constants/breakpoints"
 
 
 export const Container = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh;
+    grid-template-areas: "TXT1 IMG1";
     
     /* border: 1px solid red; */
     background-color: var(--bg);
 
-    justify-content: space-between;
-
-    max-width: 100%;
-
-    @media ${bp.mobileS} {
-        height: 40vh;
-    }
-
     @media ${bp.tablet} {
-        height: 80vh;
+        grid-template-rows: 80vh;
     }
 
     @media ${bp.laptop} {
-        height: 100vh;
+        grid-template-rows: 100vh;
     }
 
-    > :first-child {
+    > div:nth-child(1) {
+        grid-area: TXT1;
+
         display: flex;
         flex: 1;
         flex-direction: column;
@@ -37,10 +34,35 @@ export const Container = styled.div`
 
         margin-top: -10vh;
     }
+
+    > div:nth-child(2) {
+        grid-area: IMG1;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        
+        > span {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
+    /* > div:first-child {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-inline-start: 3rem;
+        gap: 6px;
+
+        margin-top: -10vh;
+    } */
 `
 
 export const Image = styled.div`
-    width: max-content;
     height: 100%;
     
 `
