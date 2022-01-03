@@ -1,0 +1,96 @@
+{
+    "app": {
+        "name": "Codefastly"
+    },
+    "illustrations": {
+        "main": "/illustration.svg",
+        "about": ""
+    },
+    "name": "José Ugal",
+    "specialization": "Full-Stack Developer and UI/UX Designer",
+    "contact": {
+        "mobile": "+34 633 164 783",
+        "mail": "jugal@codefastly.net",
+        "linkedin": "",
+        "portfolio": ""
+    },
+    "about": "My name is %s, I'm 21 years old, I live in Barcelona. I am Currently studying at an university. I've also been studying a lot on my own to learn new technologies and skills. \n\nI started as a Full-Stack Developer in 2020. Since then I have been dedicating about 4hrs day to studies. I see that I am on the right path because i see the result that the dedicates hours bring.",
+    "projects": [
+        {
+            "name": "Airbnb Clone",
+            "description": "This application is a clone of the 'Front' part of the web known as airbnb.",
+            "links": {
+                "web": "https://jugal-airbnb.vercel.app/",
+                "github": "https://github.com/JoseUgal/airbnb-clone"
+            }
+        },
+        {
+            "name": "Netflix Clone",
+            "description": "This application is a clone of the 'Front' part of the web known as Netflix.",
+            "links": {
+                "github": "https://github.com/JoseUgal/Netflix-Clone"
+            }
+        }
+    ],
+    "social": {
+        "github": "",
+        "instagram": "",
+        "twitter": ""
+    },
+    "skills": [
+        {
+            "name": "html",
+            "illustration": "/logos/html-5.png"
+        },
+        {
+            "name": "bootstrap",
+            "illustration": "/logos/bootstrap.png"
+        },
+        {
+            "name": "css 3",
+            "illustration": "/logos/css-3.png"
+        },
+        {
+            "name": "java",
+            "illustration": "/logos/java.png"
+        },
+        {
+            "name": "python",
+            "illustration": "/logos/python.png"
+        },
+        {
+            "name": "react",
+            "illustration": "/logos/react.png"
+        },
+        {
+            "name": "sass",
+            "illustration": "/logos/sass.png"
+        },
+        {
+            "name": "typescript",
+            "illustration": "/logos/typescript.png"
+        }
+    ],
+    "services": [
+        {
+            "title": "Website Creation",
+            "description": "Development of professional website, web systems, blogs and online stores.",
+            "illustration": ""
+        },
+        {
+            "title": "Responsive Sites",
+            "description": "Creation of responsive website for the best viewing at all resolutions.",
+            "illustration": "" 
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Design layouts that fit your business in a professional and faithful way in development.",
+            "illustration": "" 
+        },
+        {
+            "title": "Semantic Code",
+            "description": "Strategy and monitoring for your business, making your website appear better and better in searches.",
+            "illustration": "" 
+        }
+    ]
+}
