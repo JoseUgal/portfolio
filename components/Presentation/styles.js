@@ -42,6 +42,7 @@ export const Container = styled.div`
 export const Image = styled.div`
     width: max-content;
     height: 100%;
+    
 `
 
 export const ContactButton = styled.a`

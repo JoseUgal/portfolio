@@ -1,10 +1,13 @@
 import React from "react";
 
+// ** Next utils
+import Image from "next/image"
+
 // ** Styles
 import {
     ContactButton,
     Container,
-    Image
+    Image as ImageContainer
 } from "./styles"
 
 // ** Icons
@@ -27,12 +30,13 @@ export default function Presentation ({
                     Whatsapp
                 </ContactButton>
             </div>
-            <Image>
+            <ImageContainer>
                 <img
+                    alt="Presentation-Image"
                     src={"/illustration.svg"}
                     height={"100%"}
                 />
-            </Image>
+            </ImageContainer>
         </Container>
     )
 }
