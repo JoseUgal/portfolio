@@ -15,6 +15,7 @@ import Skills from '../components/Skills'
 import Footer from '../components/Footer'
 import Projects from '../components/Projects'
 import MobileMenu from "../components/MobileMenu"
+import Services from "../components/Services"
 
 const castStringToVariable = ( largeString, parameter ) => {
   return largeString.replace("%s", parameter)
@@ -46,17 +47,25 @@ export default function Home({
       />
 
       <Presentation 
-        imgUrl={appData.illustrations.main} 
-        name={appData.name}
-        job={appData.specialization[defaultLanguage]}
+        info={appData}
+        lng={defaultLanguage}
       />
+
       <AboutMe 
         description={appData.about.text[defaultLanguage]}
         title={appData.about.title[defaultLanguage]}
         sDownload={appData.sentences.download[defaultLanguage]}
       />
+
       <Skills data={appData.skills.data} text={appData.skills.text[defaultLanguage]} title={appData.skills.title[defaultLanguage]}/>
+      
+      <Services 
+        info={appData}
+        lng={defaultLanguage}
+      />
+      
       <Projects title={appData.projects.title[defaultLanguage]} data={appData.projects.data} lng={defaultLanguage} /> 
+      
       <Footer />
     </div>
   )

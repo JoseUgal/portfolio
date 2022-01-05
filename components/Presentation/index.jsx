@@ -19,17 +19,17 @@ import {
 import useWindowSize from "../../hooks/useWindowSize";
 
 export default function Presentation ({
-    name,
-    job
+    info,
+    lng
 }) {
     const { width } = useWindowSize()
 
     return (
         <Container>
             <div>
-                <span>Hello, I'm</span>
-                <h3>{name}</h3>
-                <h4>{job}.</h4>
+                <span>{info.sentences.welcome[lng]}</span>
+                <h3>{info.name}</h3>
+                <h4>{info.specialization[lng]}</h4>
                 <ContactButton href="https://wa.me/message/QTS2WGJVKQCFM1" >
                     <Whatsapp />
                     Whatsapp

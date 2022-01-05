@@ -39,9 +39,9 @@ export default function Navbar ({
                         <>
                             <div>
                                 <Option href="#about">{info.about.title[lng]}</Option>
-                                <Option href="#projects">{info.projects.title[lng]}</Option>
-                                <Option href="#services">{info.services.title[lng]}</Option>
                                 <Option href="#skills">{info.skills.title[lng]}</Option>
+                                <Option href="#services">{info.services.title[lng]}</Option>
+                                <Option href="#projects">{info.projects.title[lng]}</Option>
                             </div>
                             <div>
                                 <Option onClick={changeTheme}>

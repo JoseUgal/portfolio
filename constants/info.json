@@ -77,8 +77,8 @@
             "es": "Habilidades"
         },
         "text": {
-            "en": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis voluptate, amet non rem a facere sapiente, vel sit nobis exercitationem, repudiandae nemo culpa temporibus quidem fugiat veniam unde iure!",
-            "es": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi debitis voluptate, amet non rem a facere sapiente, vel sit nobis exercitationem, repudiandae nemo culpa temporibus quidem fugiat veniam unde iure!"
+            "en": "During these years of development I have tried to train myself in the maximum of current technologies in order to improve as a programmer and be able to cover the maximum possible fields in the world of web and mobile development.",
+            "es": "Durante estos años de desarrollo me he intentado formar en el máximo de tecnologías actuales con la finalidad de mejorar como programador y poder abarcar los máximos campos posibles en el mundo del desarrollo web y móvil."
         },
         "data": [
             {
@@ -122,24 +122,48 @@
         },
         "data": [
             {
-                "title": "Website Creation",
-                "description": "Development of professional website, web systems, blogs and online stores.",
-                "illustration": ""
+                "title": {
+                    "en": "Website Creation",
+                    "es": "Creación de Sitios Web"
+                },
+                "description": {
+                   "en": "Development of professional website, web systems, blogs and online stores.",
+                   "es": "Desarrollo de sitio web profesional, sistemas web, blogs y tiendas online."
+                },
+                "illustration": "/icons/website.png"
             },
             {
-                "title": "Responsive Sites",
-                "description": "Creation of responsive website for the best viewing at all resolutions.",
-                "illustration": "" 
+                "title": {
+                    "en": "Responsive Sites",
+                    "es": "Sitios Receptivos"
+                },
+                "description": {
+                    "en": "Creation of responsive website for the best viewing at all resolutions.",
+                    "es": "Creación de un sitio web receptivo para la mejor visualización en todas las resoluciones"
+                },
+                "illustration": "/icons/responsive.png" 
             },
             {
-                "title": "UI/UX Design",
-                "description": "Design layouts that fit your business in a professional and faithful way in development.",
-                "illustration": "" 
+                "title": {
+                    "en": "UI/UX Design",
+                    "es": "Diseño UI/UX"
+                },
+                "description": {
+                    "en": "Design layouts that fit your business in a professional and faithful way in development.",
+                    "es": "Diseño layouts que se adapten a su negocio de forma profesional y fiel en el desarrollo."
+                },
+                "illustration": "/icons/graphic-design.png" 
             },
             {
-                "title": "Semantic Code",
-                "description": "Strategy and monitoring for your business, making your website appear better and better in searches.",
-                "illustration": "" 
+                "title": {
+                    "en": "Semantic Code",
+                    "es": "Código Semantico"
+                },
+                "description": {
+                    "en": "Strategy and monitoring for your business, making your website appear better and better in searches.",
+                    "es": "Estrategia y seguimiento para su negocio, haciendo que su sitio web aparezca cada vez mejor en las búsquedas."
+                },
+                "illustration": "/icons/seo.png" 
             }
         ]
     },

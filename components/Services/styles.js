@@ -8,7 +8,7 @@ export const Container = styled.div`
     /* border: 1px solid red; */
     
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 
     width: 100%;
     height: max-content;
@@ -39,18 +39,23 @@ export const Content = styled.div`
 
 
 export const Logos = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media ${bp.tablet} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media ${bp.laptop} {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media ${bp.laptopL} {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     gap: 20px;
-
-    min-width: 300px;
-
     padding: 20px 3rem;
-
-    justify-content: flex-start;
-    align-items: center;
 `
 
 export const Title = styled.h2`
@@ -69,25 +74,29 @@ export const Description = styled.p`
 
 export const Box = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+
+    gap: 6px;
+    padding: 20px;
     
     position: relative;
-    width: 80px;
-    height: 80px;
+    
+    width: 100%;
+    height: 180px;
 
     border-radius: 6px;
 
     background-color: var(--bgAlt);
 
     box-shadow: rgba(0,0,0,0.05) 0 0 12px 3px;
+`
 
-    & > div {
-        position: absolute;
-        top: 28px;
-        left: 28px;
-        bottom: 28px;
-        right: 28px;
-    }
+export const IconLogo = styled.div`
+    position: relative;
+    width: 46px;
+    height: 46px;
 `
 

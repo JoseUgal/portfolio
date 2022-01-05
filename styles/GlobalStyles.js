@@ -81,6 +81,6 @@ export default createGlobalStyle`
         --shadow: ${(props) => `rgba(${props.theme.shadow}, 0.2)`};
 
         /* Sizes */
-        --navbarSize: 60px;
+        --navbarSize: 70px;
     }
 `

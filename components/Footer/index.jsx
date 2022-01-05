@@ -53,13 +53,13 @@ const Footer = () => {
     return (
         <>
             <Container>
-                <IconLink>
+                <IconLink href={'https://www.instagram.com/joseul_17'} target={'_blank'}>
                     <Instagram />
                 </IconLink>
-                <IconLink>
+                <IconLink href={'https://www.twitter.com/joseul_17'} target={'_blank'}>
                     <Twitter />
                 </IconLink>
-                <IconLink>
+                <IconLink href={'https://www.lindekin.com/joseul_17'} target={'_blank'}>
                     <Linkedin />
                 </IconLink>
                 <UpButton href='#navbar'>
