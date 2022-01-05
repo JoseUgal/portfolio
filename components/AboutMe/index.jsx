@@ -11,7 +11,9 @@ import {
 } from "./styles"
 
 export default function AboutMe ({
-    description
+    description,
+    title,
+    sDownload
 }) {
     return (
         <Container id="about">
@@ -22,11 +24,11 @@ export default function AboutMe ({
                 />
             </div>
             <div>
-                <Title>About me</Title>
+                <Title>{title}</Title>
                 <Description>
                     {description}
                 </Description>
-                <ContactButton>Download CSV</ContactButton>
+                <ContactButton>{sDownload} CSV</ContactButton>
             </div>
         </Container>
     )

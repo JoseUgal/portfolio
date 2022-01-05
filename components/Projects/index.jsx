@@ -9,21 +9,21 @@ import {
 } from "./styles"
 
 export default function Projects ({
-    data
+    data,
+    title,
+    lng
 }) {
-
-    console.log(data)
 
     return (
         <Container id="projects">
-            <Title>Projects</Title>
+            <Title>{title}</Title>
             <Content>
                 {
                     data.map(({name, description, links}, index) => (
                         <ProjectBox 
                             key={index}
-                            name={name} 
-                            description={description} 
+                            name={name[lng]} 
+                            description={description[lng]} 
                             links={links} 
                         />
                     ))

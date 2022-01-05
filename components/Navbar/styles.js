@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
+// ** Viewports
 import bp from "../../constants/breakpoints"
+
+// ** Icons
+import {
+    Menu
+} from "@styled-icons/evaicons-solid"
 
 export const Container = styled.div`
     display: flex;
@@ -27,6 +33,7 @@ export const Container = styled.div`
     }
 `
 
+
 export const Title = styled.a`
     color: var(--fontColor);
     
@@ -38,14 +45,15 @@ export const Option = styled.a`
     color: var(--fontColor);
     background-color: transparent;
     
-    &:not(:last-child){
+    /* &:not(:last-child){
         margin-right: 1rem;
     }
     
     &:last-child {
         margin-left: 1rem;
-    }
+    } */
 
+    margin-right: 1rem;
     cursor: pointer;
 
     font-size: 0.8rem;
@@ -53,4 +61,20 @@ export const Option = styled.a`
     @media ${bp.tablet} {
         font-size: 1rem;
     }
+`
+
+export const ChooseLanguage = styled.select`
+    background: transparent;
+    background-color: transparent;
+
+    color: var(--fontColor);
+`
+
+export const MenuIcon = styled(Menu)`
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+
+    fill: var(--fontColor);
 `

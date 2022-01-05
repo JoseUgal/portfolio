@@ -1,9 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-// ** Hooks
-import useWindowSize from "../../hooks/useWindowSize"
-
 import {
     Container, 
     Content,
@@ -14,17 +11,17 @@ import {
 } from "./styles"
 
 export default function Skills ({
-    data
+    data,
+    text,
+    title
 }) {
-
-    const { width } = useWindowSize()
 
     return (
         <Container>
             <Content>
-                <Title id="skills">Skills</Title>
+                <Title id="skills">{title}</Title>
                 <Description>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis minima earum laborum exercitationem cumque vero ducimus pariatur quia! Nisi autem ratione quo blanditiis dignissimos asperiores cupiditate magni ex dolorum dicta?
+                    {text}
                 </Description>
             </Content>
             <Logos>

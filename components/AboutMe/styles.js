@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40vh;
+    grid-template-rows: minmax(40vh, max-content);
 
     grid-template-areas: "IMG TXT";
     

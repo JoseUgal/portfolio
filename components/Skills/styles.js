@@ -71,18 +71,18 @@ export const Box = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
+    position: relative;
     width: 80px;
     height: 80px;
 
     border-radius: 6px;
 
     background-color: var(--bgAlt);
-    position: relative;
 
     box-shadow: rgba(0,0,0,0.05) 0 0 12px 3px;
 
-    > div {
+    & > div {
         position: absolute;
         top: 28px;
         left: 28px;
